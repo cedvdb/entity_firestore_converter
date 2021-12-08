@@ -1,0 +1,22 @@
+name: entity_firestore_converter
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+# homepage: https://www.example.com
+publish_to: none
+
+environment:
+  sdk: '>=2.16.0-10.0.dev <3.0.0'
+
+
+dependencies:
+  entity: 
+    git:
+      url: git@github.com:cedvdb/dart_entity.git
+  cloud_firestore: ^3.1.1
+
+dev_dependencies:
+  lints: ^1.0.0
+  test: ^1.16.0
+  fake_cloud_firestore: ^1.2.0
+  flutter:
+    sdk: flutter
