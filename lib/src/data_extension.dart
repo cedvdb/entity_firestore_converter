@@ -14,5 +14,5 @@ extension DataStream2<R> on Stream<List<DocumentSnapshot<R?>>> {
 }
 
 extension DataStream3<R> on Stream<QuerySnapshot<R?>> {
-  Stream<List<R>> data() => map((doc) => doc.data() as List<R>);
+  Stream<List<R>> data() => map((doc) => doc.data().cast<R>());
 }
